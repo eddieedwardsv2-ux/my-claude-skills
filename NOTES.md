@@ -2,7 +2,7 @@
 
 ## Learner
 - Complete beginner to AI. Has set up Claude Code (cloud, from phone), connected this GitHub repo, and installed some of Matt Pocock's skills (grill-me, teach, to-tickets, find-skills) without fully understanding them yet.
-- Mission drafted in MISSION.md (session 1), awaiting confirmation.
+- Mission confirmed by learner (session 1).
 
 ## Background (from session 1)
 - Works full time for a solar panel company doing roofing. Good wages now. Previously self-employed painter & decorator for years; before that 5 years employed at a company with poor wages.
@@ -43,3 +43,8 @@
 
 ## Learner insight
 - Wants Claude conversations that build on each other instead of starting fresh every time. This teaching workspace (MISSION/NOTES/learning records in the repo) is exactly that pattern. Make it an early lesson.
+
+## Publishing workflow
+- Lessons and reference sheets are written in `lessons/` and `reference/`, linking `assets/course.css` and `assets/quiz.js`.
+- To publish: `python3 assets/publish.py <page> <scratchpad>/pub`, then publish that output with the Artifact tool (same path each time keeps the URL). Published URLs are kept in `assets/links.json` so pages link to each other.
+- Lesson 1: https://claude.ai/artifact/CRvv2AY6mrwp2azFjsXHRa · Reference 1: https://claude.ai/artifact/RYSSnQtwR5a7RDqRJELzkZ

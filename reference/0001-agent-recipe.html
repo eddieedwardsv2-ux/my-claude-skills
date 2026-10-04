@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Agent Recipe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main class="page">
+  <p class="eyebrow">Reference sheet 1 · AI crash course</p>
+  <h1>The Agent Recipe</h1>
+  <p class="lede">The four parts of any AI agent, and where each one lives in your repo.</p>
+
+  <h2>Agent = four parts, in a loop</h2>
+  <div class="parts">
+    <div class="part"><span class="tag">Brain</span><div><h3>Model</h3><p>The AI that reads, thinks and writes. For you: Claude.</p></div></div>
+    <div class="part"><span class="tag">Hands</span><div><h3>Tools</h3><p>Things it can <em>do</em>: search the web, read files, save to GitHub.</p></div></div>
+    <div class="part"><span class="tag">Know-how</span><div><h3>Skills</h3><p>Written how-to instructions for one job. Loaded only when needed.</p></div></div>
+    <div class="part"><span class="tag">Notebook</span><div><h3>Memory</h3><p>Files it reads at the start, so it remembers last time.</p></div></div>
+  </div>
+
+  <h2>The loop</h2>
+  <ol class="steps">
+    <li>Plan the next step</li>
+    <li>Use a tool</li>
+    <li>Check the result</li>
+    <li>Repeat until the job is done, then report back</li>
+  </ol>
+  <p>A <mark>chatbot</mark> answers once and stops. An <mark>agent</mark> keeps looping until the job is done.<a class="cite" href="https://www.anthropic.com/engineering/building-effective-agents">[1]</a></p>
+
+  <h2>In your repo</h2>
+  <dl class="map">
+    <div><dt>Know-how</dt><dd><span class="file">.claude/skills/</span>: one folder per skill, each with a <span class="file">SKILL.md</span><a class="cite" href="https://code.claude.com/docs/en/skills">[2]</a></dd></div>
+    <div><dt>Notebook</dt><dd><span class="file">MISSION.md</span>, <span class="file">NOTES.md</span>, <span class="file">learning-records/</span></dd></div>
+    <div><dt>Hands</dt><dd>Built into Claude Code: web search, reading pages, editing files, git</dd></div>
+    <div><dt>Brain</dt><dd>Claude, running in Claude Code</dd></div>
+  </dl>
+
+  <h2>Words</h2>
+  <ul class="defs">
+    <li><b>Skill</b><span>A folder holding one <span class="file">SKILL.md</span> file of instructions. Claude uses it when it's relevant, or when you type <code>/skill-name</code>.</span></li>
+    <li><b>Plugin</b><span>A box set: several skills (and sometimes tools) bundled together to install in one go. Superpowers and Matt Pocock's skills are both plugins.</span></li>
+    <li><b>Repo</b><span>Short for repository: a project folder stored on GitHub, with every change saved in its history.</span></li>
+  </ul>
+
+  <h2>Golden rule</h2>
+  <p>Start with the simplest thing that works. Add parts only when they clearly help.<a class="cite" href="https://www.anthropic.com/engineering/building-effective-agents">[1]</a></p>
+
+  <hr>
+  <p class="foot">
+    [1] Anthropic, <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a><br>
+    [2] Claude Code docs, <a href="https://code.claude.com/docs/en/skills">Skills</a>
+  </p>
+  <nav class="nav foot">
+    <a href="../lessons/0001-what-makes-an-agent.html">Lesson 1: What makes an agent</a>
+  </nav>
+</main>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What Makes an Agent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=JetBrains+Mono:wght@500;700&display=swap">
+<link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main class="page">
+  <p class="eyebrow">Lesson 1 · about 6 minutes</p>
+  <h1>What Makes an Agent</h1>
+  <p class="lede">You asked: “Is a bunch of skills in one project how I start my own AI agent?” Nearly. Skills are one of four parts. By the end of this page you'll be able to name all four and spot them in your own repo.</p>
+
+  <h2>Think of a new apprentice</h2>
+  <p>Picture a sharp new apprentice starting on your solar crew. They're clever, but on day one they don't know your firm. To be useful, they need four things:</p>
+
+  <div class="parts">
+    <div class="part"><span class="tag">Brain</span><div><h3>The apprentice</h3><p>Clever, quick to learn. In AI this is the <mark>model</mark>: Claude.</p></div></div>
+    <div class="part"><span class="tag">Hands</span><div><h3>The kit in the van</h3><p>Ladders, drills, a tape measure. In AI these are <mark>tools</mark>: web search, reading pages, saving files.</p></div></div>
+    <div class="part"><span class="tag">Know-how</span><div><h3>The firm's method sheets</h3><p>“How we fit a panel bracket, step by step.” In AI these are <mark>skills</mark>.</p></div></div>
+    <div class="part"><span class="tag">Notebook</span><div><h3>The site diary</h3><p>What got done yesterday, what's next. In AI this is <mark>memory</mark>: files it reads at the start.</p></div></div>
+  </div>
+
+  <p>Put those four together and let it work on its own, and you have an <mark>agent</mark>.</p>
+
+  <h2>Chatbot vs agent</h2>
+  <p>A chatbot answers your question once, then stops. An agent keeps going round a loop until the job is done:</p>
+  <ol class="steps">
+    <li>Plan the next step</li>
+    <li>Use a tool</li>
+    <li>Check what happened</li>
+    <li>Repeat, or report back when finished</li>
+  </ol>
+  <p>Anthropic, the company that makes Claude, puts it this way: agents are systems where the AI <em>“dynamically direct[s] [its] own processes and tool usage.”</em><a class="cite" href="https://www.anthropic.com/engineering/building-effective-agents">[1]</a> In plain English, it decides its own next step.</p>
+
+  <h2>You've already got one</h2>
+  <p>This teaching setup is a small agent. Here's where each part lives:</p>
+  <dl class="map">
+    <div><dt>Know-how</dt><dd><span class="file">.claude/skills/</span>. Your <code>teach</code> skill is the method sheet I'm following right now.<a class="cite" href="https://code.claude.com/docs/en/skills">[2]</a></dd></div>
+    <div><dt>Notebook</dt><dd><span class="file">MISSION.md</span> and <span class="file">NOTES.md</span>. That's why I won't forget you next time.</dd></div>
+    <div><dt>Hands</dt><dd>The web searches I ran and the pushes I made to GitHub today</dd></div>
+    <div><dt>Brain</dt><dd>Claude</dd></div>
+  </dl>
+
+  <div class="note">
+    <p><b>Skill or plugin?</b> A <mark>skill</mark> is one method sheet: a folder with a <span class="file">SKILL.md</span> file inside. A <mark>plugin</mark> is a box set of several skills you install in one go.<a class="cite" href="https://code.claude.com/docs/en/skills">[2]</a></p>
+    <p><b>Superpowers</b> is a very popular plugin (about 295,000 stars on GitHub) with skills like brainstorming and writing plans.<a class="cite" href="https://github.com/obra/superpowers">[3]</a> It's built mainly for writing software, which is something we'll weigh up when we pick skills for your research agent.</p>
+  </div>
+
+  <h2>Check yourself</h2>
+  <p>Answer from memory. One try each, because the effort of remembering is what makes it stick.</p>
+  <p class="score" aria-live="polite"></p>
+
+  <div class="quiz" data-answer="2" data-right="A skill is written know-how for one job, like a method sheet.">
+    <h3>1. Which part of an agent is a skill?</h3>
+    <div class="opts">
+      <button>The model that does thinking</button>
+      <button>The files that remember progress</button>
+      <button>Written instructions for one job</button>
+      <button>Access to search the web</button>
+    </div>
+  </div>
+
+  <div class="quiz" data-answer="0" data-right="An agent keeps going round plan, act, check until the job's done. A chatbot answers once.">
+    <h3>2. What makes an agent different from a chatbot?</h3>
+    <div class="opts">
+      <button>It loops until the job's done</button>
+      <button>It uses a bigger AI model</button>
+      <button>It always costs much more money</button>
+      <button>It only ever works on computers</button>
+    </div>
+  </div>
+
+  <div class="quiz" data-answer="3" data-right="MISSION.md and NOTES.md are the site diary. They're read at the start so nothing's forgotten.">
+    <h3>3. In your repo, what is the agent's notebook?</h3>
+    <div class="opts">
+      <button>The .claude/skills folder files</button>
+      <button>Web search and page reading</button>
+      <button>The Claude app on iPhone</button>
+      <button>MISSION.md and NOTES.md files</button>
+    </div>
+  </div>
+
+  <div class="quiz" data-answer="1" data-right="A plugin is a box set. Superpowers bundles many skills into one install.">
+    <h3>4. Superpowers is a plugin. What is a plugin?</h3>
+    <div class="opts">
+      <button>One single written instruction file</button>
+      <button>A bundle of several skills</button>
+      <button>A paid upgrade to Claude</button>
+      <button>A website Claude can read</button>
+    </div>
+  </div>
+
+  <h2>Your win</h2>
+  <p>Back in the chat, tell me in your own words what the four parts of an agent are. Explaining it yourself is the real test, and it's how we'll start designing your <b>research agent</b> next lesson.</p>
+
+  <div class="source">
+    <h3>Read next</h3>
+    <p><a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a> by Anthropic. Read just the first two sections (“What are agents?” and “When (and when not) to use agents”). It's written for developers, so send me any line that doesn't make sense.</p>
+  </div>
+
+  <div class="note"><p><b>Stuck on anything?</b> Ask me in the chat. No question is too basic. I'm your teacher, and that's the whole point.</p></div>
+
+  <hr>
+  <p class="foot">
+    [1] Anthropic, <a href="https://www.anthropic.com/engineering/building-effective-agents">Building effective agents</a><br>
+    [2] Claude Code docs, <a href="https://code.claude.com/docs/en/skills">Skills</a><br>
+    [3] <a href="https://github.com/obra/superpowers">obra/superpowers</a> on GitHub
+  </p>
+  <nav class="nav foot">
+    <a href="../reference/0001-agent-recipe.html">Reference: The Agent Recipe</a>
+  </nav>
+</main>
+<script src="../assets/quiz.js"></script>
+</body>
+</html>
