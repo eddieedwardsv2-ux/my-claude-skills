@@ -35,7 +35,7 @@
 - Also wants to understand Claude's own replies — keep my chat jargon-free or define terms inline.
 
 ## Setup audit (session 1, checked against mattpocock/skills upstream)
-- No "watch" skill exists in mattpocock/skills or the skills.sh directory. Asked learner what they saw.
+- "Watch" skill found: bradautomates/claude-video (`/watch`), seen on a "Next New Thing" YouTube video. NOT installed: its default route downloads YouTube videos with yt-dlp, which YouTube's Terms forbid; the Gemini route needs a Google API key; it doesn't run in the Claude chat app. Revisit on MacBook, Gemini route only, if learner still wants it.
 - `teach` skill matches upstream exactly. MISSION.md + NOTES.md done. Still to do before lesson 1: RESOURCES.md, glossary reference sheet, shared stylesheet in assets/.
 - `setup-matt-pocock-skills` was run before (docs/agents/*). Two quirks: triage-labels.md was written though `triage` isn't installed (harmless); issue-tracker.md says to use the `gh` CLI, which isn't available in cloud sessions (Claude uses GitHub tools instead). Engineering skills are for coding projects and aren't needed for the current mission.
 - `git-guardrails-claude-code` (Matt's safety skill) would block `git push`, which conflicts with the push-to-main workflow, so don't install it for now.
