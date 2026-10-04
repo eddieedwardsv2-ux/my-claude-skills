@@ -25,6 +25,7 @@
 - Ask **one question at a time**.
 
 ## Safety (important)
+- Learner decides on personal-use risk once informed (e.g. accepted YouTube terms risk for /watch). Inform, then respect the choice.
 - Previously had a GitHub account banned after "messing about forking random skill repos" in early Claude Code use. Learner is very keen to always follow platform rules/T&Cs.
 - Never suggest scraping or anything that breaks a site's terms. Flag T&C risks proactively and explain them.
 - Be cautious about bulk forking/cloning/automated GitHub actions; explain before doing anything outward-facing.
@@ -35,7 +36,10 @@
 - Also wants to understand Claude's own replies — keep my chat jargon-free or define terms inline.
 
 ## Setup audit (session 1, checked against mattpocock/skills upstream)
-- "Watch" skill found: bradautomates/claude-video (`/watch`), seen on a "Next New Thing" YouTube video. NOT installed: its default route downloads YouTube videos with yt-dlp, which YouTube's Terms forbid; the Gemini route needs a Google API key; it doesn't run in the Claude chat app. Revisit on MacBook, Gemini route only, if learner still wants it.
+- "Watch" skill found: bradautomates/claude-video (`/watch`), seen on a "Next New Thing" YouTube video. NOT installed: its default route downloads YouTube videos with yt-dlp, which YouTube's Terms forbid; the Gemini route needs a Google API key; it doesn't run in the Claude chat app. UPDATE: verified it's the popular one (~18k stars, 1.9k forks on GitHub). Learner has heard the YouTube-terms risk and accepts it for personal learning, so that's their call. Can't run in this cloud session: the network policy blocks www.youtube.com. Best home is Claude Code on the MacBook.
 - `teach` skill matches upstream exactly. MISSION.md + NOTES.md done. Still to do before lesson 1: RESOURCES.md, glossary reference sheet, shared stylesheet in assets/.
 - `setup-matt-pocock-skills` was run before (docs/agents/*). Two quirks: triage-labels.md was written though `triage` isn't installed (harmless); issue-tracker.md says to use the `gh` CLI, which isn't available in cloud sessions (Claude uses GitHub tools instead). Engineering skills are for coding projects and aren't needed for the current mission.
 - `git-guardrails-claude-code` (Matt's safety skill) would block `git push`, which conflicts with the push-to-main workflow, so don't install it for now.
+
+## Learner insight
+- Wants Claude conversations that build on each other instead of starting fresh every time. This teaching workspace (MISSION/NOTES/learning records in the repo) is exactly that pattern. Make it an early lesson.
