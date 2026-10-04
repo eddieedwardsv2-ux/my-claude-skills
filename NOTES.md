@@ -2,7 +2,7 @@
 
 ## Learner
 - Complete beginner to AI. Has set up Claude Code (cloud, from phone), connected this GitHub repo, and installed some of Matt Pocock's skills (grill-me, teach, to-tickets, find-skills) without fully understanding them yet.
-- Mission not yet defined — first job is to discover it through questions.
+- Mission drafted in MISSION.md (session 1), awaiting confirmation.
 
 ## Background (from session 1)
 - Works full time for a solar panel company doing roofing. Good wages now. Previously self-employed painter & decorator for years; before that 5 years employed at a company with poor wages.
@@ -23,3 +23,13 @@
 - Lessons short and phone-friendly (single column, big tap targets, no wide tables).
 - Explain all jargon in plain English.
 - Ask **one question at a time**.
+
+## Safety (important)
+- Previously had a GitHub account banned after "messing about forking random skill repos" in early Claude Code use. Learner is very keen to always follow platform rules/T&Cs.
+- Never suggest scraping or anything that breaks a site's terms. Flag T&C risks proactively and explain them.
+- Be cautious about bulk forking/cloning/automated GitHub actions; explain before doing anything outward-facing.
+
+## Interests
+- Cars: Audi TT Mk1 (BAM 225bhp engine), Mini Cooper S R53. Also petrol garden tools (strimmers) — good examples to use in lessons.
+- Practice project: listings tracker/dashboard from eBay / Gumtree / Copart (legal sources only).
+- Also wants to understand Claude's own replies — keep my chat jargon-free or define terms inline.
