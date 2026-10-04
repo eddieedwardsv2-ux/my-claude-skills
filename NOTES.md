@@ -33,3 +33,9 @@
 - Cars: Audi TT Mk1 (BAM 225bhp engine), Mini Cooper S R53. Also petrol garden tools (strimmers) — good examples to use in lessons.
 - Practice project: listings tracker/dashboard from eBay / Gumtree / Copart (legal sources only).
 - Also wants to understand Claude's own replies — keep my chat jargon-free or define terms inline.
+
+## Setup audit (session 1, checked against mattpocock/skills upstream)
+- No "watch" skill exists in mattpocock/skills or the skills.sh directory. Asked learner what they saw.
+- `teach` skill matches upstream exactly. MISSION.md + NOTES.md done. Still to do before lesson 1: RESOURCES.md, glossary reference sheet, shared stylesheet in assets/.
+- `setup-matt-pocock-skills` was run before (docs/agents/*). Two quirks: triage-labels.md was written though `triage` isn't installed (harmless); issue-tracker.md says to use the `gh` CLI, which isn't available in cloud sessions (Claude uses GitHub tools instead). Engineering skills are for coding projects and aren't needed for the current mission.
+- `git-guardrails-claude-code` (Matt's safety skill) would block `git push`, which conflicts with the push-to-main workflow, so don't install it for now.
