@@ -6,7 +6,7 @@
 
 ## Background (from session 1)
 - Works full time for a solar panel company doing roofing. Good wages now. Previously self-employed painter & decorator for years; before that 5 years employed at a company with poor wages.
-- Has lost driving licence — limits van-based side businesses for now.
+- Not driving at the moment, so van-based side businesses are off for now.
 - Past start-up ideas: car valeting, green waste removal / garden clearances, flipping cheap cars from Marketplace.
 - Why those stalled: too much for one person (doing the job AND driving the van AND finding work) before affording staff; struggled to get leads with no before/after proof-of-work photos.
 - Stated goal: "build things like trackers and dashboards to help me."
@@ -26,7 +26,7 @@
 
 ## Safety (important)
 - Learner decides on personal-use risk once informed (e.g. accepted YouTube terms risk for /watch). Inform, then respect the choice.
-- Previously had a GitHub account banned after "messing about forking random skill repos" in early Claude Code use. Learner is very keen to always follow platform rules/T&Cs.
+- Learner is very keen to always follow platform rules/T&Cs.
 - Never suggest scraping or anything that breaks a site's terms. Flag T&C risks proactively and explain them.
 - Be cautious about bulk forking/cloning/automated GitHub actions; explain before doing anything outward-facing.
 

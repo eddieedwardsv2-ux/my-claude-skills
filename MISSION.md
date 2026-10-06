@@ -12,7 +12,7 @@ Go from using AI as a basic search chatbot to using **AI agents, skills and tool
 - I can read a business or tech reply and know what the departments and roles mean (marketing, sales, ops, HR/recruitment)
 
 ## Constraints
-- **Always follow the rules and T&Cs** of every platform (GitHub, Facebook, eBay, etc.). Had a GitHub account banned once from careless forking. Safety comes first
+- **Always follow the rules and T&Cs** of every platform (GitHub, Facebook, eBay, etc.). Safety comes first
 - iPhone and Claude app only until the MacBook Air M4 arrives (end of Oct 2026)
 - Works full time in roofing, so learning happens in short bursts
 - Lessons short, phone-friendly, plain English, one question at a time
