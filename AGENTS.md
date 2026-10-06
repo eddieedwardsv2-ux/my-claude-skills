@@ -1,5 +1,7 @@
 # AGENTS.md
 
+**Start here:** Charlie's operating system and Second Brain live in Google Drive. Read the doc titled "00 — START HERE — Charlie Second Brain Index" before answering about Charlie's projects, focus or decisions. Details in `CLAUDE.md`.
+
 ## Agent skills
 
 ### Issue tracker
