@@ -14,4 +14,4 @@ Charlie's AI operating system and Second Brain live in **Google Drive**, not in 
 
 - **This repo is public.** Never commit Second Brain content, personal details or Drive snapshots here. Keep them in the session scratchpad.
 - Cloud sessions have no `gh` CLI. Use the GitHub MCP tools instead of the `gh` commands in `docs/agents/issue-tracker.md`.
-- To check that the Second Brain still routes to current, consistent context, run `scripts/context_check.py` (how-to in its header).
+- Tools for Charlie's OS (such as the Second Brain context check) live in the public repo `eddieedwardsv2-ux/Charlie-os`, not here.
